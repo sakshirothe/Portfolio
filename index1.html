@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sakshi Rothe | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- GitHub's signature font and color scheme -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+      --comment: #8b949e;
+      --success: #238636;
+      --border: #30363d;
+      --shadow: 0 2px 16px rgba(20,24,31,0.25);
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Fira Mono', monospace;
+      margin: 0; padding: 0;
+      min-height: 100vh;
+    }
+    .wrapper {
+      max-width: 800px;
+      margin: 40px auto;
+      background: var(--panel);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 40px 32px;
+      border: 1px solid var(--border);
+    }
+    .code-header {
+      color: var(--accent);
+      font-size: 2.2rem;
+      margin-bottom: 0;
+      letter-spacing: -1px;
+      display: flex;
+      align-items: center;
+    }
+    .code-header .blink {
+      width: 16px;
+      height: 32px;
+      margin-left: 5px;
+      background: var(--accent);
+      display: inline-block;
+      animation: blink 1s steps(2, start) infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .subtitle {
+      color: var(--comment);
+      margin-bottom: 28px;
+      font-size: 1.1rem;
+      margin-top: 0;
+    }
+
+    .code-section {
+      background: #161b22;
+      color: #c9d1d9;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin: 22px 0;
+      padding: 22px 26px;
+      box-shadow: 0 2px 8px rgba(20,24,31,0.11);
+      font-size: 1.08rem;
+      line-height: 1.6;
+      position: relative;
+    }
+    .code-section:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 16px; top: 16px;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+    }
+
+    .section-title {
+      color: var(--accent);
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+    .project-link {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px dashed var(--accent);
+      transition: border-color 0.2s;
+    }
+    .project-link:hover {
+      border-bottom: 1px solid var(--accent);
+      color: #2f81f7;
+    }
+    .skills-list {
+      margin: 0; padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+    }
+    .skills-list li {
+      background: #21262d;
+      color: var(--success);
+      padding: 3px 10px;
+      border-radius: 6px;
+      border: 1px solid #30363d;
+      font-size: 0.97rem;
+      transition: background 0.2s, color 0.2s;
+    }
+    .skills-list li:hover {
+      background: var(--accent);
+      color: var(--bg);
+    }
+    @media (max-width: 600px) {
+      .wrapper { padding: 18px 5px; }
+      .code-header { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="code-header">
+      &lt;SakshiRothe /&gt;<span class="blink"></span>
+    </div>
+    <div class="subtitle">
+      // Developer • Data Enthusiast • Problem Solver<br>
+      // Inspired by GitHub’s dark style
+    </div>
+    <div class="code-section">
+      <div class="section-title">// Projects</div>
+      <ul>
+        <li>
+          <a class="project-link" href="https://github.com/sakshirothe/Uber-Trip" target="_blank">
+          Uber Demand Predictor Web App</a> — Real-time trip forecasting for NYC
+        </li>
+        <li>
+          <a class="project-link" href="https://github.com/sakshirothe/Portfolio" target="_blank">
+          My Portfolio Site</a> — This site’s source code!
+        </li>
+      </ul>
+    </div>
+    <div class="code-section">
+      <div class="section-title">// Skills</div>
+      <ul class="skills-list">
+        <li>Python</li><li>JavaScript</li><li>HTML5/CSS3</li>
+        <li>Flask</li><li>Streamlit</li><li>Machine Learning</li>
+        <li>Git/GitHub</li><li>SQL</li>
+      </ul>
+    </div>
+    <div class="code-section">
+      <div class="section-title">// Contact</div>
+      <span style="color:#8b949e;">Email:</span> <a class="project-link" href="mailto:sakshi@email.com">sakshi@email.com</a><br>
+      <span style="color:#8b949e;">GitHub:</span> <a class="project-link" href="https://github.com/sakshirothe" target="_blank">sakshirothe</a>
+    </div>
+  </div>
+</body>
+</html>
